@@ -49,11 +49,11 @@ function onMessageHandler (target, context, msg, self) {
     // If the command is known, let's execute it
     if (commandName === nuuriSip) {
         
-        // client.say(target, );
+        client.say(target, 'cohhSip Hydrate! cohhSip');
         console.log(`* Executed ${commandName} command`);
     } else if (commandName === giftBomb) {
 
-        // client.say(target, );
+        client.say(target, 'cohhBomb cohhBlind Hide non-subs! cohhBlind cohhBomb');
         console.log(`* Executed ${commandName} command`);
         
         

@@ -8,6 +8,8 @@ const nuuriSip = 'You need to drink some water, Cohh.'
 
 const giftBomb = 'cohhBomb INCOMING GIFT BOMB cohhBomb'
 
+const helloBomb = '!hiStart'
+
 const commands = {
     nuuriSip: {
         response: 'Hydrate time! cohhSip cohhSip cohhSip'
@@ -56,6 +58,10 @@ function onMessageHandler (target, context, msg, self) {
         client.say(target, 'cohhBomb cohhBlind Hide non-subs! cohhBlind cohhBomb');
         console.log(`* Executed ${commandName} command`);
         
+    } else if (commandName === helloBomb) {
+
+        client.say(target, 'cohhGHi cohhHi cohhGV cohhLurk');
+        console.log(`* Executed ${commandName} command`);
         
         
         // console.log(`* Unknown command ${commandName}`);

@@ -8,7 +8,7 @@ const nuuriSip = 'You need to drink some water, Cohh.'
 
 const giftBomb = 'cohhBomb INCOMING GIFT BOMB cohhBomb'
 
-const helloBomb = '!hiStart'
+const helloBomb = "The Hello Queue and Center's are open!! From this point on, any cohhHi's will be added to the daily hello list or appear in the hicenter! cohhGG"
 
 const commands = {
     nuuriSip: {
@@ -43,8 +43,6 @@ client.connect();
 function onMessageHandler (target, context, msg, self) {
     if (self) { return; } //ignore messages from bot
 
-    // const {response} = commands[command] || {};
-
     // Remove whitespace from chat message
     const commandName = msg.trim();
     
@@ -62,9 +60,7 @@ function onMessageHandler (target, context, msg, self) {
 
         client.say(target, 'cohhGHi cohhHi cohhGV cohhLurk');
         console.log(`* Executed ${commandName} command`);
-        
-        
-        // console.log(`* Unknown command ${commandName}`);
+
     }
 }
 

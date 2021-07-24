@@ -10,6 +10,8 @@ const giftBomb = 'cohhBomb INCOMING GIFT BOMB cohhBomb'
 
 const helloBomb = "The Hello Queue and Center's are open!! From this point on, any cohhHi's will be added to the daily hello list or appear in the hicenter! cohhGG"
 
+const chatLove = "Chat cohhL HAS BEEN CLAIMED! cohhGV Thanks to"
+
 const commands = {
     nuuriSip: {
         response: 'Hydrate time! cohhSip cohhSip cohhSip'
@@ -61,6 +63,11 @@ function onMessageHandler (target, context, msg, self) {
         client.say(target, 'cohhGHi cohhHi cohhGV cohhLurk');
         console.log(`* Executed ${commandName} command`);
 
+    } else if (commandName === chatLove) {
+
+        client.say(target, 'cohhL cohhL cohhL');
+        console.log(`* Executed ${commandName} command`);
+    
     }
 }
 
